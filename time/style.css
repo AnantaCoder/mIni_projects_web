@@ -1,0 +1,32 @@
+body{
+    background: url(https://images.pexels.com/photos/36487/above-adventure-aerial-air.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 );
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+
+.container{
+    align-content: center;
+     min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-size: cover;
+            align-items: center;
+            object-fit: contain;
+
+}
+
+.box{
+    display: flex;
+    font-size:1200%;
+    color: bisque;
+    margin: 25px;
+    padding: 25px;
+    border-radius: 44px;
+
+
+}
+

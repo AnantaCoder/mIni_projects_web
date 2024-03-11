@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box flex">
+            <div id="hrs">00</div>
+            <span>:</span>
+            <div id="min">00</div>
+            <span>:</span>
+            <div id="sec">00</div>
+        </div>
+    </div>
+
+
+    <script>
+        let hrs = document.getElementById("hrs");
+        let min = document.getElementById("min");
+        let sec = document.getElementById("sec");
+
+
+        setInterval(()=> {
+            let currentTime = new Date();
+        // console.log(currentTime.getHours());
+
+        hrs.innerHTML = (currentTime.getHours()<10?"0":"")  + currentTime.getHours();
+        min.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
+        sec.innerHTML = (currentTime.getSeconds()<10?"0":"")  + currentTime.getSeconds();
+
+        },1000)
+        
+
+
+    </script>
+</body>
+</html>
