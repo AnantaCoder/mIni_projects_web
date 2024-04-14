@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form .display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+form .display input , button{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+
+.container  {
+    
+    text-align: center;
+    -webkit-box-shadow: 15px 5px 15px 5px #8CFFA1;
+    box-shadow: 15px 5px 15px 5px #8CFFA1;
+
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    background: url(https://images.unsplash.com/photo-1696643830146-44a8755f1905?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    justify-content: center;
+
+}
+
+.calculator {
+    -webkit-box-shadow: 12px 5px 11px 15px rgba(114, 42, 81, 0.75);
+    /* box-shadow: 12px 5px 11px 15px rgba(168,44,113,0.95); */
+
+
+    background: #A253A4;
+    background: -moz-radial-gradient(center, #A253A4 0%, #772272 44%, #371130 100%);
+    background: -webkit-radial-gradient(center, #A253A4 0%, #772272 44%, #371130 100%);
+    background: radial-gradient(ellipse at center, #A253A4 0%, #772272 44%, #371130 100%);
+    border-radius: 5px;
+}
+
+.calculator form input , button {
+    border: 15;
+    outline: 0;
+    
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: -8px -8px 15px rgba(88, 23, 58, 0.95), rgba(23, 32, 88, 0.95);
+    color: azure;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* logo and stuff*/
+.suppoprt-me {
+	display: inline-block;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	width: 20vw;
+	max-width: 250px;
+	min-width: 200px;
+	z-index: 9;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+h1 {
+	font-size: 24px;
+	margin: 10px 0 0 0;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #eeeeee;
+}
+
+p {
+	
+	font-weight: light;
+	color: #f4e5e5;
+    font-size: xx-large;
+}
+
+span a {
+	font-size: 18px;
+	color: #cccccc;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: all 0.4s ease-in-out;
+	&:hover {
+		color: #ffffff;
+	}
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.contain {
+	/* width: 100%;
+	height: 100%; */
+	display: flex;
+	flex-direction: column;
+    padding-right: 250px;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar {
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+/* media querries */
+
+@media only screen and (max-width: 1000px) {
+	.container {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	  position: relative; /* Single column layout for phones */
+	  background-position: center;
+	  background-size: cover;
+	  
+	}
+	.contain{
+		
+		margin-left: 50%;
+	}
+	.suppoprt-me {
+		display:grid;
+		position:relative;
+		bottom: 10px;
+		left: 10px;
+		width: 20vw;
+		margin: 25px;
+		max-width: 250px;
+		justify-content: center;
+
+		min-width: 200px;
+		z-index: 9;
+		img {
+			/* width: 230%; */
+			height: auto;
+			
+		}
+	}
+	
+	}
+  

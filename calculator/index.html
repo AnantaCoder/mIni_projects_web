@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Calculator</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    
+<!-- logo and stuff  -->
+<div class="central">
+
+
+ 
+
+
+ <!-- calculator -->
+    <div class="container">
+        <div class="contain">
+            <div class="avatar">
+                <a href="https://www.buymeacoffee.com/anantacoder">
+                    <img src="Screenshot 2023-07-15 180837.png" alt="Skytsunami" />
+                </a>
+            </div>
+            <div class="content">
+                <h1>Hello!🙋‍♂️🙋🏻‍♂️🙋🏻‍♀️</h1>
+                <!-- <p>Follow me on:</p> -->
+                
+                <p> I am  ANIRBAN SARKAR </p>
+                <a class="suppoprt-me" href="https://www.buymeacoffee.com/anantacoder" target="_blank"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a Coffee&nbsp&emoji=&slug=marioduarte&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"></a>
+            </div>
+        </div> 
+        
+        <div class="calculator">
+
+            <form action="">
+
+                <div class="display">
+                    <input type="text" name="display">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = '' ">
+                    <input type="button" value="DEL"onclick="display.value = display.value.toString().slice(0,-1) ">
+                    <input type="button" value="." onclick="display.value += '.' ">
+                    <input type="button" value="/" onclick="display.value += '/' ">
+                </div>
+                <div>
+                    
+                      <input type="button" value="7" onclick="display.value += '7' ">
+                    
+                    <input type="button" value="8" onclick="display.value += '8' ">
+                    <input type="button" value="9" onclick="display.value += '9' " >
+                    <input type="button" value="*" onclick="display.value += '*' ">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4' ">
+                    <input type="button" value="5" onclick="display.value += '5' ">
+                    <input type="button" value="6" onclick="display.value += '6' ">
+                    <input type="button" value="+" onclick="display.value += '+' ">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1'" >
+                    <input type="button" value="2" onclick="display.value += '2'" >
+                    <input type="button" value="3" onclick="display.value += '3'" >
+                    <input type="button" value="-" onclick="display.value += '-' ">
+                </div>
+                
+                <div>
+                    
+                    <input type="button" value="00" onclick="display.value += '00'" >
+                    <input type="button" value="0" onclick="display.value += '0'" >
+
+                    <input type="button" value="=" id="equal" onclick="display.value = eval(display.value) ">
+                </div>
+            </form>
+        </div>
+        
+    </div>
+     
+
+</div>
+    
+</body>
+</html>
